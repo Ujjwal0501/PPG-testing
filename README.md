@@ -7,8 +7,8 @@ This completes the transaction and its status is shown to the end-user from the 
 
 # Installation/Manual Setup
 ## Prerequisites
-* paytm account
-* paytm developer 'merchantid', 'secret key' or 'key'
+* paytm account ([create account](https://developer.paytm.com/docs/))
+* paytm developer 'merchantid', 'secret key' or 'key' ([get keys here](https://dashboard.paytm.com/next/apikeys))
 * git (only if you plan to clone and make changes, to maintain the different versions)
 * node (node package installed on the machine)
 * text editor
