@@ -12,9 +12,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 var PaytmConfig = {
-    mid: "XXXXXXXXXXXXXXXXXXXX",
-	key: "XXXXXXXXXXXXXXXX",
-	website: "XXXXXXXXXX"
+    mid: "XXXXXXXXXXXXXXXXXXXX", // use the development merchant id
+	key: "XXXXXXXXXXXXXXXX",   // use the secret key of development
+	website: "WEBSTAGING"
 }
 
 app.get('/', (req, res) => {
