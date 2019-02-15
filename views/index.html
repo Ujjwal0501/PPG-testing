@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    </head>
+    <body>
+        <center><h1>Welcome!</h1></center><br><br>
+        <form class="" action="pay_register" method="post">
+            <div style="width:33%; margin:auto;">
+                <div><label for="name" >Full Name</label><input style="float:right; clear: both;" type="text" name="name" placeholder="Full Name"></div><br>
+                <div><label for="quantity" >Quantity</label><input style="float:right; clear: both;" type="number" name="quantity" value="1" min="1" max="10" oninput="calc()"></div><br>
+                <div><label for="rate" >Price per Unit</label><input style="float:right; clear: both;" type="number" name="rate" id="rate" value="8" readonly></div><br>
+                <div><label for="total" >Total</label><input style="float:right; clear: both;" type="number" name="total" value="8" readonly></div><br>
+            </div>
+            <div style="margin:50px 50%;">
+                <button type="submit" name="register" class="style-module--white-btn--3wH8V btn btn-primary small grid align-center">Pay Registration Fee</button>
+            </div>
+        </form>
+    </body>
+    <script type="text/javascript">
+        function calc() {
+            var quantity = parseInt(document.getElementsByName('quantity')[0].value);
+            document.getElementsByName('total')[0].value = 8*quantity;
+        }
+    </script>
+</html>
